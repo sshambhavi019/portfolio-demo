@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shambhavi Srivastava | Software Engineer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="preloader"><div class="spinner"></div></div>
+    <div id="scroll-progress"></div>
+    <div id="cursor-glow"></div>
+    <canvas id="particles-bg"></canvas>
+
+    <nav>
+        <a href="#" class="logo">Shambhavi<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-item active">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#education" class="nav-item">Education</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <section id="hero">
+        <p class="hero-welcome">Hi, I'm Shambhavi 👋</p>
+        <h1 class="hero-title">Building Scalable Applications<br>& Digital Experiences</h1>
+        <div class="typing-container"><span id="typing-text"></span></div>
+        <p class="hero-desc">Motivated Computer Science undergraduate with experience in Android Development, Full Stack Web Development, Backend Engineering, and Machine Learning.</p>
+        <div class="cta-group">
+            <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="#" class="btn btn-secondary" id="download-btn"><i class="fas fa-download"></i> Resume</a>
+        </div>
+    </section>
+
+    <section id="about" class="reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="glass-card about-grid">
+            <div>
+                <p style="line-height: 1.7; color: var(--text-muted); margin-bottom: 15px;">I am a B.Tech Computer Science student at NIMS University Jaipur (Expected 2027).</p>
+                <p style="line-height: 1.7; color: var(--text-muted);">I enjoy solving real-world problems through software development and have experience building Android apps, full-stack web applications, REST APIs, and machine learning projects.</p>
+            </div>
+            <div class="about-interests">
+                <h4>Core Interests</h4>
+                <div class="interest-tags">
+                    <span class="tag">Backend Development</span>
+                    <span class="tag">Web Development</span>
+                    <span class="tag">Android Development</span>
+                    <span class="tag">Data Structures & Algorithms</span>
+                    <span class="tag">Software Engineering</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="reveal">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="glass-card skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-item"><div class="skill-info"><span>Java</span><span>90%</span></div><div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span>JavaScript</span><span>85%</span></div><div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span>Python</span><span>80%</span></div><div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span>C++</span><span>75%</span></div><div class="progress-bar"><div class="progress-fill" data-width="75%"></div></div></div>
+            </div>
+            <div class="glass-card skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Web Dev</h3>
+                <div class="skill-item"><div class="skill-info"><span>Node.js / Express.js</span><span>85%</span></div><div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span>HTML5 / CSS3</span><span>90%</span></div><div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div></div>
+            </div>
+            <div class="glass-card skill-category">
+                <h3><i class="fas fa-database"></i> Databases & Tools</h3>
+                <div class="skill-item"><div class="skill-info"><span>MySQL / MongoDB</span><span>80%</span></div><div class="progress-bar"><div class="progress-fill" data-width="80%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span>Git / GitHub</span><span>85%</span></div><div class="progress-bar"><div class="progress-fill" data-width="85%"></div></div></div>
+                <div class="skill-item"><div class="skill-info"><span>Android Studio / VS Code</span><span>90%</span></div><div class="progress-bar"><div class="progress-fill" data-width="90%"></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="reveal">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 - 2027 (Expected)</div>
+                <div class="glass-card timeline-content">
+                    <h3>Bachelor of Technology</h3>
+                    <h4>Computer Science / Software Engineering</h4>
+                    <p style="color: var(--accent); margin-bottom: 10px;">NIMS University, Jaipur</p>
+                    <p style="font-size: 0.95rem; color: var(--text-muted);">Relevant Coursework:</p>
+                    <div class="coursework">
+                        <span class="course-tag">Data Structures</span>
+                        <span class="course-tag">OOP</span>
+                        <span class="course-tag">DBMS</span>
+                        <span class="course-tag">Operating Systems</span>
+                        <span class="course-tag">Web Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="reveal">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Ecosystems</button>
+            <button class="filter-btn" data-filter="web">Web Full-Stack</button>
+            <button class="filter-btn" data-filter="android">Android Native</button>
+            <button class="filter-btn" data-filter="ml">Data Science/ML</button>
+        </div>
+        <div class="projects-grid">
+            <div class="glass-card project-card" data-category="android">
+                <div class="project-tech">
+                    <span class="tech-pill">Java</span><span class="tech-pill">ExoPlayer</span><span class="tech-pill">Android Studio</span>
+                </div>
+                <h3>Android Video Player App</h3>
+                <ul class="project-features">
+                    <li><i class="fas fa-check"></i> Supports 6+ video formats</li>
+                    <li><i class="fas fa-check"></i> Adaptive playback engineering</li>
+                    <li><i class="fas fa-check"></i> Intuitive gesture control mechanics</li>
+                    <li><i class="fas fa-check"></i> Reduced buffering latency metrics by 30%</li>
+                </ul>
+            </div>
+            <div class="glass-card project-card" data-category="web">
+                <div class="project-tech">
+                    <span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span class="tech-pill">MongoDB</span>
+                </div>
+                <h3>Swiggy Clone Platform</h3>
+                <ul class="project-features">
+                    <li><i class="fas fa-check"></i> Live restaurant dynamic catalogs</li>
+                    <li><i class="fas fa-check"></i> Complex internal state cart systems</li>
+                    <li><i class="fas fa-check"></i> Dynamic end-user checkout flows</li>
+                    <li><i class="fas fa-check"></i> Integrated 8+ microservice REST API endpoints</li>
+                </ul>
+            </div>
+            <div class="glass-card project-card" data-category="web">
+                <div class="project-tech">
+                    <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span><span class="tech-pill">JavaScript</span>
+                </div>
+                <h3>Flipkart Clone Store</h3>
+                <ul class="project-features">
+                    <li><i class="fas fa-check"></i> Fully adaptive fluid modern design systems</li>
+                    <li><i class="fas fa-check"></i> Structured fast product catalogs</li>
+                    <li><i class="fas fa-check"></i> Real-time front-end search engineering</li>
+                    <li><i class="fas fa-check"></i> Handles 100+ dynamic product listings</li>
+                </ul>
+            </div>
+            <div class="glass-card project-card" data-category="web">
+                <div class="project-tech">
+                    <span class="tech-pill">Node.js</span><span class="tech-pill">Express.js</span><span class="tech-pill">JS</span>
+                </div>
+                <h3>Goww Clone App</h3>
+                <ul class="project-features">
+                    <li><i class="fas fa-check"></i> Grocery quick-commerce UI delivery engine</li>
+                    <li><i class="fas fa-check"></i> Asynchronous component loading schemes</li>
+                    <li><i class="fas fa-check"></i> Dynamic client session cart managers</li>
+                    <li><i class="fas fa-check"></i> Modular and reusable codebase structures</li>
+                </ul>
+            </div>
+            <div class="glass-card project-card" data-category="web">
+                <div class="project-tech">
+                    <span class="tech-pill">JavaScript</span><span class="tech-pill">Node.js</span><span class="tech-pill">MySQL</span>
+                </div>
+                <h3>College Finder Engine</h3>
+                <ul class="project-features">
+                    <li><i class="fas fa-check"></i> Multivariable relational college routing indices</li>
+                    <li><i class="fas fa-check"></i> Filter parameters sorted by branches and locations</li>
+                    <li><i class="fas fa-check"></i> Detailed fee structures and cross-comparisons</li>
+                    <li><i class="fas fa-check"></i> Personalized student recommendation tracks</li>
+                </ul>
+            </div>
+            <div class="glass-card project-card" data-category="ml">
+                <div class="project-tech">
+                    <span class="tech-pill">Python</span><span class="tech-pill">Pandas</span><span class="tech-pill">Scikit-Learn</span>
+                </div>
+                <h3>Titanic Survival Prediction</h3>
+                <ul class="project-features">
+                    <li><i class="fas fa-check"></i> Extensive data preprocessing & data pipeline cleanups</li>
+                    <li><i class="fas fa-check"></i> Algorithmic model feature element mappings</li>
+                    <li><i class="fas fa-check"></i> ML predictive model validation scoring</li>
+                    <li><i class="fas fa-check"></i> Verified ~80% test validation accuracy</li>
+                </ul>
+            </div>
+            <div class="glass-card project-card" data-category="web">
+                <div class="project-tech">
+                    <span class="tech-pill">Python</span><span class="tech-pill">MySQL</span>
+                </div>
+                <h3>Student Management System</h3>
+                <ul class="project-features">
+                    <li><i class="fas fa-check"></i> Complete relational asset database CRUD modules</li>
+                    <li><i class="fas fa-check"></i> Processing capacity built for 1,000+ data profiles</li>
+                    <li><i class="fas fa-check"></i> Automated script reporting mechanics cutting manual work by 50%</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="reveal">
+        <div class="glass-card achievements-grid">
+            <div class="counter-box">
+                <i class="fas fa-code-branch"></i>
+                <span class="counter" data-target="200">0</span>
+                <p>DSA Problems Solved</p>
+            </div>
+            <div class="counter-box">
+                <i class="fab fa-github"></i>
+                <span class="counter" data-target="10">0</span>
+                <p>GitHub Repositories</p>
+            </div>
+            <div class="counter-box">
+                <i class="fas fa-users"></i>
+                <span class="counter" data-target="50">0</span>
+                <p>Students Impacted</p>
+            </div>
+            <div class="counter-box">
+                <i class="fas fa-trophy"></i>
+                <span class="counter" data-target="1">0</span>
+                <p>Hackathon Participant</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="dual-grid">
+            <div>
+                <h2 class="section-title" style="text-align: left; font-size: 2rem; margin-bottom: 30px;">Certifications</h2>
+                <div class="cert-list">
+                    <div class="glass-card cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info"><h4>Java (Basic & Problem Solving)</h4><p>HackerRank</p></div>
+                    </div>
+                    <div class="glass-card cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info"><h4>Python for Everybody</h4><p>Coursera</p></div>
+                    </div>
+                    <div class="glass-card cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info"><h4>Full Stack Web Development</h4><p>Udemy</p></div>
+                    </div>
+                    <div class="glass-card cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-info"><h4>Data Structures & Algorithms</h4><p>NPTEL</p></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="section-title" style="text-align: left; font-size: 2rem; margin-bottom: 30px;">Leadership & Impact</h2>
+                <div class="lead-list">
+                    <div class="glass-card lead-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div class="lead-info"><h4>Technical Workshop Lead</h4><p>Coordinated coding operations for 50+ structural peers</p></div>
+                    </div>
+                    <div class="glass-card lead-item">
+                        <i class="fas fa-laptop-house"></i>
+                        <div class="lead-info"><h4>Active Tech Club Organizer</h4><p>Collaborated dynamically across software sprint teams</p></div>
+                    </div>
+                    <div class="glass-card lead-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <div class="lead-info"><h4>Student Mentor</h4><p>Guided junior students through production development stacks</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="glass-card contact-container">
+            <form id="portfolio-contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_FORM_ID" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" id="form-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="form-email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="form-message" rows="5" placeholder="Write your project details or engineering queries here..." required></textarea>
+                </div>
+                <button type="submit" id="form-submit-btn" class="btn btn-primary">
+                    Send Secure Message <i class="fas fa-paper-plane"></i>
+                </button>
+                <div id="form-status-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Shambhavi Srivastava. Built with Engineering Rigor.</p>
+        <div class="footer-socials">
+            <a href="https://github.com/sshambhavi019" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/shambhavi-srivastava" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:sshambhavi019@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
